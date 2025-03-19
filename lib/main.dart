@@ -14,7 +14,7 @@ class MyApp extends StatelessWidget {
       title: 'Portfolio App',
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
-        colorScheme: ColorScheme.fromSeed(seedColor: Colors.blue),
+        colorScheme: ColorScheme.fromSeed(seedColor: const Color(0xFFE91E63)),
         useMaterial3: true,
       ),
       home: const PortfolioScreen(),
@@ -52,7 +52,7 @@ class PortfolioScreen extends StatelessWidget {
                         width: 40,
                         height: 40,
                         decoration: BoxDecoration(
-                          color: Colors.blue,
+                          color: const Color(0xFFE91E63),
                           borderRadius: BorderRadius.circular(20),
                         ),
                         child: const Icon(
@@ -63,7 +63,7 @@ class PortfolioScreen extends StatelessWidget {
                       ),
                       const SizedBox(width: 8),
                       const Text(
-                        'AeroVision',
+                        'Portfolio App',
                         style: TextStyle(
                           fontSize: 18,
                           fontWeight: FontWeight.bold,
@@ -86,14 +86,14 @@ class PortfolioScreen extends StatelessWidget {
               // Profile Image in Circle
               Container(
                 width: 200,
-                height: 200,
+                height: 220,
                 decoration: BoxDecoration(
                   shape: BoxShape.circle,
                   border: Border.all(color: Colors.grey.shade200, width: 2),
                 ),
                 child: ClipOval(
-                  child: Image.network(
-                    'https://via.placeholder.com/200x200', // Replace with your image
+                  child: Image.asset(
+                    'assets/images/image.jpg',
                     fit: BoxFit.cover,
                   ),
                 ),
@@ -125,15 +125,15 @@ class PortfolioScreen extends StatelessWidget {
                       ),
                     ),
                     TextSpan(
-                      text: 'Robert Junior\n',
+                      text: 'Veth Sivhuo\n',
                       style: TextStyle(
                         fontSize: 40,
                         fontWeight: FontWeight.bold,
-                        color: Colors.blue,
+                        color: const Color(0xFFE91E63),
                       ),
                     ),
                     TextSpan(
-                      text: 'Product Designer',
+                      text: 'Flutter Developer',
                       style: TextStyle(
                         fontSize: 40,
                         fontWeight: FontWeight.bold,
@@ -149,7 +149,7 @@ class PortfolioScreen extends StatelessWidget {
               
               // Bio Text
               const Text(
-                'Collaborating with highly skilled individuals, our agency delivers top-quality services.',
+                'A passionate university student exploring Flutter development, building creative mobile apps through coursework and personal projects.',
                 textAlign: TextAlign.center,
                 style: TextStyle(
                   fontSize: 16,
@@ -165,11 +165,11 @@ class PortfolioScreen extends StatelessWidget {
                 height: 50,
                 child: ElevatedButton(
                   onPressed: () {
-                    // Launch email or social media
-                    _launchUrl('mailto:contact@example.com');
+                    // Launch Telegram chat
+                    _launchUrl('https://t.me/vs_hour');
                   },
                   style: ElevatedButton.styleFrom(
-                    backgroundColor: Colors.blue,
+                    backgroundColor: const Color(0xFFE91E63),
                     foregroundColor: Colors.white,
                     shape: RoundedRectangleBorder(
                       borderRadius: BorderRadius.circular(25),
@@ -190,10 +190,10 @@ class PortfolioScreen extends StatelessWidget {
                 child: OutlinedButton(
                   onPressed: () {
                     // Launch LinkedIn
-                    _launchUrl('https://www.linkedin.com/');
+                    _launchUrl('http://linkedin.com/in/veth-sivhuo-ab5083291');
                   },
                   style: OutlinedButton.styleFrom(
-                    side: const BorderSide(color: Colors.blue),
+                    side: const BorderSide(color: Color(0xFFE91E63)),
                     shape: RoundedRectangleBorder(
                       borderRadius: BorderRadius.circular(25),
                     ),
@@ -203,10 +203,10 @@ class PortfolioScreen extends StatelessWidget {
                     children: const [
                       Text(
                         'Download CV',
-                        style: TextStyle(fontSize: 16, color: Colors.blue),
+                        style: TextStyle(fontSize: 16, color: Color(0xFFE91E63)),
                       ),
                       SizedBox(width: 8),
-                      Icon(Icons.download, color: Colors.blue),
+                      Icon(Icons.download, color: Color(0xFFE91E63)),
                     ],
                   ),
                 ),
