@@ -11,7 +11,7 @@ A modern and elegant portfolio application built with Flutter, designed to showc
 
 2. Navigate to project directory:
    ```bash
-   cd sivhour01
+   cd Flutter_Assignment01
    ```
 
 3. Install dependencies:
